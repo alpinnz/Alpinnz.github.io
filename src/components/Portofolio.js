@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 import Images from "./../assets/images";
 
@@ -5,15 +6,15 @@ const Portofolio = () => {
   return (
     <section id="portfolio" className="portfolio">
       {/* end portfolio */}
-      <div className="container text-center">
+      <div className="container">
         <div className="row">
           <div className="col-sm-12">
-            <h2 className="text-dark">Portfolio</h2>
+            <h2 className="text-dark text-center">Portfolio</h2>
             <hr />
           </div>
         </div>
         <div className="row row-value">
-          <div className="col-sm-4">
+          <div className="col-sm-4 ">
             <a
               href="https://github.com/alpinnz/Seleksi-Bootcamp-Arkademy-Batch-14-1"
               style={{ display: "table-cell" }}
@@ -83,7 +84,7 @@ const Portofolio = () => {
               />
             </a>
           </div>
-          <div className="col-sm-4">
+          <div className="col-sm-4 text-center">
             <a
               href="http://alpinnz.xyz/customer/init/2"
               style={{ display: "table-cell" }}
