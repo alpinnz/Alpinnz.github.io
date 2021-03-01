@@ -24,7 +24,7 @@ const Header = () => {
             "React Native Development",
           ]}
         />
-        <a href="#" className="btn-main-offer">
+        <a href="#about" className="btn-main-offer">
           contact me
         </a>
       </div>
