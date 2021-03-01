@@ -1,8 +1,11 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import Particles from "react-particles-js";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
-import Particles from "react-particles-js";
+import About from "./components/About";
+import Portofolio from "./components/Portofolio";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -26,6 +29,9 @@ function App() {
       />
       <Navbar />
       <Header />
+      <About />
+      <Portofolio />
+      <Contact />
     </div>
   );
 }

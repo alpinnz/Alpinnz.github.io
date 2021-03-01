@@ -1,19 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Reggae+One&display=swap");
 
 :root {
   --primary-white: #fff;
   --primary-orange: #f9ab00;
-  --primary-dark: rgba(255,255,255,0);
+  --primary-dark: rgba(255, 255, 255, 0);
   --primary-red: #ef4035;
-   --primary-hover-red: #f32501;
+  --primary-hover-red: #f32501;
 }
 
-body{
+body {
   font-family: "Roboto Condesed", sans-serif;
 }
+
 /* Navbar */
-.logo{
+.logo {
   width: 16.25rem;
 }
 
@@ -27,7 +28,6 @@ nav {
   font-weight: 500;
   letter-spacing: 0.0375px;
   cursor: pointer;
-
 }
 
 .nav-item {
@@ -41,16 +41,16 @@ nav {
   border-top: 0.1875rem solid var(--primary-dark);
 }
 
-.navbar-brand{
+.navbar-brand {
   max-width: 17.25rem;
   padding: 0 !important;
   height: 4rem !important;
   font-size: 2rem;
-  font-family: 'Reggae One', cursive;
+  font-family: "Reggae One", cursive;
 }
 
-.navbar-nav>li>a.active,
-.navbar-nav>li>a.active:focus {
+.navbar-nav > li > a.active,
+.navbar-nav > li > a.active:focus {
   border-top: 0.1875rem solid var(--primary-orange);
 }
 
@@ -58,20 +58,18 @@ nav {
   border-top: 0.1875rem solid var(--primary-orange);
 }
 
-@media(max-width: 768) {
+@media (max-width: 768) {
   .main-brand {
     width: 7rem;
   }
-
 }
-
 
 /* Header */
 .header-wrapper {
   position: relative;
   background: url(./assets//images/bacground.jpg) no-repeat;
   background-size: cover;
-  background-position:center;
+  background-position: center;
   height: 90vh;
 }
 
@@ -89,12 +87,15 @@ nav {
   z-index: 1;
 }
 
+.main-info img {
+  width: 200px;
+  border: 5px solid #666;
+}
+
 .main-info h1 {
   color: var(--primary-orange);
   text-transform: uppercase;
 }
-
-
 
 /* Typed text */
 .typed-text {
@@ -102,7 +103,7 @@ nav {
   color: var(--primary-white);
 }
 
-@media(max-width: 768) {
+@media (max-width: 768) {
   .main-info h1 {
     font-size: 1.7rem !important;
   }
@@ -127,9 +128,8 @@ nav {
   text-decoration: none;
   background-color: var(--primary-red);
   color: var(--primary-white);
-  transition:  .2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
-
 
 /*  */
 
@@ -138,4 +138,93 @@ nav {
   height: 100vh;
   width: 100vw;
   z-index: 1;
+}
+
+/*  */
+
+section {
+  min-height: 70vh;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+
+.about {
+  min-height: 70vh;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+
+.row-value {
+  padding-top: 32px;
+  padding-bottom: 0.625rem;
+}
+
+.portfolio {
+  min-height: 70vh;
+  background-color: #eee;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  padding-top: 10px;
+}
+
+footer p {
+  color: #aaa;
+}
+
+/*  */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  html {
+    font-size: 0.4rem;
+  }
+
+  section {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  html {
+    font-size: 0.6rem;
+  }
+
+  section {
+    min-height: 300px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  html {
+    font-size: 0.8rem;
+  }
+
+  section {
+    min-height: 700px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  html {
+    font-size: 1rem;
+  }
+
+  /* section {
+        min-height: 925px;
+        padding-top:0.625rem ;
+        padding-bottom:0.625rem ;
+    } */
 }
